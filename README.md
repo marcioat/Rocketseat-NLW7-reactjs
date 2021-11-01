@@ -16,4 +16,4 @@ TODO:
  está com problema que o botão authenticate não está buscando os dados da API, 
  web\src\components\LoginBox\index.tsx - linha 20
 
-
+.
