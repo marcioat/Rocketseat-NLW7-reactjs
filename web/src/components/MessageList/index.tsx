@@ -1,6 +1,27 @@
+import {useEffect, useState} from 'react'
+import { api } from "../../services/api"
+
 import styles from "./styles.module.scss";
- 
+
+type Message = {
+  id: string;
+  text: string;
+  user:{
+    name:string;
+    avatar_url:string;
+  }
+}
+
 export function MessageList() {
+  const [messages,setMessages] = useState<Message[]>([]);
+
+  useEffect(() =>{
+    api.get<Message[]>('messages/last3').then(response =>{
+      console.log(response.data);
+      setMessages(response.data);
+    })
+  },[])
+
   return (
     <div className={styles.messageListWrapper}>
 <svg width="280" height="24" viewBox="0 0 280 24" fill="none" xmlns="http://www.w3.org/2000/svg">
