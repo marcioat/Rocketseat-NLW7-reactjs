@@ -8,10 +8,7 @@ https://youtu.be/_MIXek7GYmg
 
 **CONTINUAR DE:**
 https://www.youtube.com/watch?v=_MIXek7GYmg&t=4440s
-Parei um 01h14min
+Parei um 01h30min
 Começando a falar de contexto
 
 >**TODO:**
-1- Está com problema que o botão authenticate não está buscando os dados da API,
-web\src\components\LoginBox\index.tsx - linha 20
-31/10/2021 - 23:50
